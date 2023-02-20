@@ -1,0 +1,1 @@
+SELECT dp.partner_name, AVG(r.rating) AS avg_rating FROM delivery_partner dp INNER JOIN rating r ON dp.idDelivery_Partner = r.delivery_partner_id GROUP BY dp.idDelivery_Partner ORDER BY avg_rating DESC;

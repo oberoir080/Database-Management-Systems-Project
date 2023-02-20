@@ -1,0 +1,1 @@
+SELECT product_name, product_type FROM product WHERE product_quantity = 0;

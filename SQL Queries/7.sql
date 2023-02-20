@@ -1,0 +1,1 @@
+SELECT job_title, AVG(salary) AS avg_salary FROM employee GROUP BY job_title;

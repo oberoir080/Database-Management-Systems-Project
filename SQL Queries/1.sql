@@ -1,0 +1,1 @@
+SELECT customer.idCustomer, customer.customer_name, username FROM customer WHERE customer.idCustomer IN (SELECT cart.idCart FROM cart WHERE total_price>=20000);

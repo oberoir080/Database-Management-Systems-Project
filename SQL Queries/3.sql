@@ -1,0 +1,1 @@
+UPDATE product SET product_price = LEAST(product_price * 0.8, 100) WHERE discount_percent > 20;

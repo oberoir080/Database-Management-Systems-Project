@@ -1,0 +1,1 @@
+SELECT c.customer_name, SUM(o.total_amount) AS total_spent FROM customer c INNER JOIN `order` o ON c.idCustomer = o.customer_id GROUP BY c.idCustomer ORDER BY total_spent DESC LIMIT 10;

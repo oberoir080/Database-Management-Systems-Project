@@ -1,0 +1,1 @@
+SELECT c.customer_name, COUNT(*) AS num_orders FROM customer c INNER JOIN `order` o ON c.idCustomer = o.customer_id GROUP BY c.idCustomer ORDER BY num_orders DESC LIMIT 5;
